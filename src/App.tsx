@@ -667,7 +667,7 @@ export default function App() {
               <div className="lg:col-span-5">
                 <div className="rounded-2xl overflow-hidden border-2 border-[#03B16C] shadow-lg bg-[#07120D]">
                   <img
-                    src="/assets/tvc/team_stage.jpg"
+                    src={`${import.meta.env.BASE_URL}assets/tvc/team_stage.jpg`}
                     alt="Integrantes de Tucumán Videojuego Cooperativa presentando en escenario"
                     referrerPolicy="no-referrer"
                     className="w-full h-80 sm:h-96 object-cover object-top"
@@ -704,7 +704,7 @@ export default function App() {
               <div className="lg:col-span-6">
                 <div className="rounded-xl overflow-hidden border-2 border-[#D4FF33]/50 shadow-lg bg-[#07120D]">
                   <img
-                    src="/assets/tvc/como_trabajamos_playtest.jpg"
+                    src={`${import.meta.env.BASE_URL}assets/tvc/como_trabajamos_playtest.jpg`}
                     alt="Familia jugando una experiencia interactiva de TVC en pantalla gigante"
                     referrerPolicy="no-referrer"
                     className="w-full h-64 sm:h-80 object-cover"

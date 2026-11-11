@@ -70,6 +70,9 @@ export const PROJECT_CATEGORIES: { id: ProjectCategory; label: string }[] = [
   { id: 'advergame', label: 'Advergames & Marcas' },
 ];
 
+const assetUrl = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export const TVC_PROJECTS: TvcProject[] = [
   {
     id: 'en-el-nombre-de-la-ley',
@@ -104,23 +107,23 @@ export const TVC_PROJECTS: TvcProject[] = [
     ],
     teamSizeOrHardware: '+15 profesionales · Doblaje de voz completo',
     featuredSpan: true,
-    coverImage: '/assets/tvc/ley_legisladora_dialog.jpg',
+    coverImage: assetUrl('/assets/tvc/ley_legisladora_dialog.jpg'),
     posterImage: '/assets/tvc/ley_poster_ilustrado.jpg',
     screenshots: [
       {
-        src: '/assets/tvc/ley_legisladora_dialog.jpg',
+        src: assetUrl('/assets/tvc/ley_legisladora_dialog.jpg'),
         caption: 'Diálogo interactivo con legisladora en el entorno 3D/2D de la Honorable Legislatura.',
       },
       {
-        src: '/assets/tvc/ley_screen_1.jpg',
+        src: assetUrl('/assets/tvc/ley_screen_1.jpg'),
         caption: 'Análisis y selección de propuestas para el articulado de una nueva ley audiovisual.',
       },
       {
-        src: '/assets/tvc/ley_screen_2.jpg',
+        src: assetUrl('/assets/tvc/ley_screen_2.jpg'),
         caption: 'Mecánica de clasificación entre Fake News, Información Objetiva y Opinión ciudadana.',
       },
       {
-        src: '/assets/tvc/ley_screen_3.jpg',
+        src: assetUrl('/assets/tvc/ley_screen_3.jpg'),
         caption: 'Personaje Luna presentando proyectos que cruzan el folklore tucumano con narrativa actual.',
       },
     ],
@@ -154,22 +157,22 @@ export const TVC_PROJECTS: TvcProject[] = [
     ],
     teamSizeOrHardware: 'Periférico físico custom · 1 a 4 jugadores',
     featuredSpan: false,
-    coverImage: '/assets/tvc/edet_screen_1.jpg',
+    coverImage: assetUrl('/assets/tvc/edet_screen_1.jpg'),
     screenshots: [
       {
-        src: '/assets/tvc/edet_screen_1.jpg',
+        src: assetUrl('/assets/tvc/edet_screen_1.jpg'),
         caption: 'Público jugando en la EXPO Tucumán 2025 utilizando el tablero con teclas de luz y controles de aire.',
       },
       {
-        src: '/assets/tvc/edet_screen_2.jpg',
+        src: assetUrl('/assets/tvc/edet_screen_2.jpg'),
         caption: 'Vista cenital de la vivienda: gestión cooperativa del consumo eléctrico habitación por habitación.',
       },
       {
-        src: '/assets/tvc/edet_controllers_closeup.jpg',
+        src: assetUrl('/assets/tvc/edet_controllers_closeup.jpg'),
         caption: 'Detalle de ingeniería del periférico exclusivo con llaves térmicas, teclas e infrarrojos.',
       },
       {
-        src: '/assets/tvc/como_trabajamos_playtest.jpg',
+        src: assetUrl('/assets/tvc/como_trabajamos_playtest.jpg'),
         caption: 'Sesión familiar frente a pantalla gigante durante jornadas de concientización energética.',
       },
     ],
@@ -202,22 +205,22 @@ export const TVC_PROJECTS: TvcProject[] = [
     ],
     teamSizeOrHardware: 'Sello Buen Diseño 2025 · Image Campus & SpielFabrique',
     featuredSpan: true,
-    coverImage: '/assets/aistudio/image_ee5e59d3.png',
+    coverImage: assetUrl('/assets/aistudio/image_ee5e59d3.png'),
     screenshots: [
       {
-        src: '/assets/aistudio/image_ee5e59d3.png',
+        src: assetUrl('/assets/aistudio/image_ee5e59d3.png'),
         caption: 'Arte principal oficial de Vagabundo en los paisajes de la yunga tucumana.',
       },
       {
-        src: '/assets/tvc/vagabundo_screen_2.jpg',
+        src: assetUrl('/assets/tvc/vagabundo_screen_2.jpg'),
         caption: 'Vuelo de aves autóctonas sobre los valles y quebradas de la yunga tucumana.',
       },
       {
-        src: '/assets/tvc/vagabundo_screen_1.jpg',
+        src: assetUrl('/assets/tvc/vagabundo_screen_1.jpg'),
         caption: 'Exploración libre cruzando ríos cristalinos y senderos naturales.',
       },
       {
-        src: '/assets/tvc/vagabundo_screen_3.jpg',
+        src: assetUrl('/assets/tvc/vagabundo_screen_3.jpg'),
         caption: 'Rastreo de aromas y paseo relajado entre vegetación nativa en 3D.',
       },
     ],
@@ -246,14 +249,14 @@ export const TVC_PROJECTS: TvcProject[] = [
     ],
     teamSizeOrHardware: '2 atriles físicos dedicados · Duelo 1v1 en vivo',
     featuredSpan: false,
-    coverImage: '/assets/tvc/trivia_screen_2.jpg',
+    coverImage: assetUrl('/assets/tvc/trivia_screen_2.jpg'),
     screenshots: [
       {
-        src: '/assets/tvc/trivia_screen_2.jpg',
+        src: assetUrl('/assets/tvc/trivia_screen_2.jpg'),
         caption: 'Participantes compitiendo desde los dos atriles físicos producidos para la Municipalidad de San Miguel de Tucumán.',
       },
       {
-        src: '/assets/tvc/trivia_screen_1.jpg',
+        src: assetUrl('/assets/tvc/trivia_screen_1.jpg'),
         caption: 'Interfaz de pregunta sobre cultura e identidad de San Miguel de Tucumán.',
       },
     ],
@@ -290,18 +293,18 @@ export const TVC_PROJECTS: TvcProject[] = [
     ],
     teamSizeOrHardware: 'Ranking semanal · Android & iOS (2026)',
     featuredSpan: false,
-    coverImage: '/assets/tvc/rnr_screen_2.jpg',
+    coverImage: assetUrl('/assets/tvc/rnr_screen_2.jpg'),
     screenshots: [
       {
-        src: '/assets/tvc/rnr_screen_2.jpg',
+        src: assetUrl('/assets/tvc/rnr_screen_2.jpg'),
         caption: 'Presentación del protagonista de "Burro The Arranque" en el desierto western sobrenatural.',
       },
       {
-        src: '/assets/tvc/rnr_screen_1.jpg',
+        src: assetUrl('/assets/tvc/rnr_screen_1.jpg'),
         caption: 'Acción de disparos sobre rieles en el pueblo western con multiplicadores de puntaje.',
       },
       {
-        src: '/assets/tvc/rnr_screen_3.jpg',
+        src: assetUrl('/assets/tvc/rnr_screen_3.jpg'),
         caption: 'Combate contra jefe colosal al ritmo de rock/metal por el primer puesto del ranking semanal.',
       },
     ],

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'NasalizationRg', 'Nasalization', 'Orbitron', 'Archivo', sans-serif;
+    --font-sans: 'Archivo', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* TVC Official Brand Chromatics (Manual de Marca pág. 5) */
+    --tvc-green-vivid: #06BE0D;
+    --tvc-green-bright: #07C845;
+    --tvc-green-primary: #03B16C;
+    --tvc-teal: #07C8B2;
+    --tvc-purple: #5D117B;
+    --tvc-lime: #D4FF33;
+  }
+
+  html {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Barcode / Editorial Motif from TVC Portfolio Headers */
+.tvc-barcode {
+  background-image: repeating-linear-gradient(
+    to right,
+    currentColor 0px,
+    currentColor 2px,
+    transparent 2px,
+    transparent 4px,
+    currentColor 4px,
+    currentColor 5px,
+    transparent 5px,
+    transparent 8px,
+    currentColor 8px,
+    currentColor 11px,
+    transparent 11px,
+    transparent 13px
+  );
+}

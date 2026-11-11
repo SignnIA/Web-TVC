@@ -1,0 +1,6 @@
+{
+  "name": "TVC — Tucumán Videojuego Cooperativa | Portfolio & Estudio",
+  "description": "Portfolio oficial e identidad visual de Tucumán Videojuego Cooperativa (TVC). Desarrollamos videojuegos educativos, advergames, experiencias culturales interactivas e instalaciones inmersivas desde Tucumán hacia el mundo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
